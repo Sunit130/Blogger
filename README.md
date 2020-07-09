@@ -36,7 +36,7 @@ A Blogging web application, built using Django
   
   ### Class based view
   1. ListView
-  2. DetailView pass directly pass pk in url to reduce code
+  2. DetailView
   3. CreateView
   4. UpdateView
   5. DeleteView
