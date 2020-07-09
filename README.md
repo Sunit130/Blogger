@@ -7,15 +7,18 @@ A Blogging web application, built using Django
   1. TextField
   2. DateTimeField
   
+  
   ### Create user form
   1. UserCreationForm
   2. Modify UserCreationForm to add email in form
   3. flash messages
   4. crispy-form (styling form)
   
+  
   ### Authetication
   1. LoginView
   2. LogoutView
+  
   
   ### User Profile 
   1. Profile Model
@@ -25,19 +28,23 @@ A Blogging web application, built using Django
   5. Create media dir to store images
   6. Signals to set default image for Profile when user is registered
   
+  
   ### Update User Profile
   1. Forms to update userame, email, user image
   2. Resize images using pillow
   
+  
   ### Class based view
-    - ListView
-    - DetailView pass directly pass pk in url to reduce code
-    - CreateView
-    - UpdateView
-    - DeleteView
+  1. ListView
+  2. DetailView pass directly pass pk in url to reduce code
+  3. CreateView
+  4. UpdateView
+  5. DeleteView
+    
     
   ### Mixin
-    - LoginRequiredMixin
-    - UserPassesTestMixin (test_func)
+   1. LoginRequiredMixin
+   2. UserPassesTestMixin (test_func)
+  
   
   ### Pagination
