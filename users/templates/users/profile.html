@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="content-section">
+        <div class="media">
+          <img class="mr-3 account-img" src="{{ user.profile.image.url }}" alt="User Profile">
+          <div class="media-body">
+            <h2 class="mt-0">{{ user.username }}</h2>
+            <p class="text-secondary">{{ user.email }}</p>
+          </div>
+        </div>
+
+        <form method="post" enctype="multipart/form-data">  <!-- Actually Store Images once Update  -->
+            <div class="form-group" >
+                {% csrf_token %}
+                <legend class="border-bottom mb-4">Profile Info</legend>
+                {{ u_form|crispy }}
+                {{ p_form|crispy }}
+            </div>
+            <div class="form-group">
+                <button class="btn btn-outline-primary" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+{% endblock content%}   <!-- closing only content -->
